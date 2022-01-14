@@ -16,8 +16,12 @@ let reverseWord = '';
     return reverseWord;
 }
 
+const Reverse = reverseWord (Word);
+console.log (Reverse);
+
+
 if (reverseWord = Word){
-    return true;
+    console.log (true);
 } else {
-    return false;
+    console.log (false);
 }
