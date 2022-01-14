@@ -19,9 +19,4 @@ let reverseWord = '';
 const Reverse = reverseWord (Word);
 console.log (Reverse);
 
-
-if (reverseWord = Word){
-    console.log (true);
-} else {
-    console.log (false);
-}
+console.log(reverseWord == Word);
