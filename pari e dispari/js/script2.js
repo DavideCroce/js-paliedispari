@@ -16,8 +16,27 @@ console.log(Numb);
 
 
 function rndNumb(min, max){
-    return Math.floor(Math.random() * (min - max)) + min;
+    return Math.floor(Math.random() * (max + 1 - min)) + min;
 }
 
 const CpuNumb = rndNumb(1, 5);
 console.log(CpuNumb);
+
+const sum = CpuNumb + Numb;
+console.log(sum);
+
+if( sum % 2 === 0){
+    console.log('La somma è pari');
+}else{
+    console.log('La somma è dispari');
+}
+
+if(sum % 2 === 0 || Numb % 2 === 0) {
+    console.log('Hai vinto!');
+}else if (sum % 2 !== 0 || Numb % 2 !== 0){
+    console.log('Hai vinto!');
+}else if (sum % 2 === 0 || CpuNumb % 2 === 0){
+    console.log('Hai perso! la Cpu ti ha battuto!');
+}else{
+    console.log('Hai perso! la Cpu ti ha battuto!')
+}
