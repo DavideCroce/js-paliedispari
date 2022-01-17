@@ -13,10 +13,18 @@ let reverseWord = '';
     for (let i = Word.length - 1; i >= 0; i--){
         reverseWord += Word[i];
     }
-    return reverseWord;
+
+    console.log(reverseWord);
+
+    if (Word === reverseWord){
+        return true;
+    }
+    else{
+        return false;
+    }
+    
 }
 
 const Reverse = reverseWord (Word);
 console.log (Reverse);
 
-console.log(reverseWord == Word);
